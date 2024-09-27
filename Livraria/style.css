@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma;
+    text-align: center;
+}
+
+main {
+    background-color: maroon;
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    margin-left: 30%;
+}
+
+table {
+    margin: auto;
+    border: 3px dashed indianred;
+}
+
+td {
+    border: 3px dashed indianred;
+}
+
+h1 {
+    color: whitesmoke;
+    font-style: italic;
+    border: 2px dotted mistyrose;
+}
+
+h3 {
+    position: relative; 
+    font-family: sans-serif;
+    color: white;
+    z-index: 1; 
+}
+
+.h3_ficcao,
+.header_2 {
+    position: relative;
+}
+
+.h3_ficcao::before,
+.header_2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('Capas/fundo.jpg');
+    background-size: cover;
+    opacity: 0.5;
+    z-index: 0; 
+}
+
+aside {
+    background-image: url(Capas/vinho.jpg);
+    width: 30%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+}
+
+.aside_cate,
+.aside_ficcao,
+.aside_noficcao {
+    color: maroon;
+    background-image: url(Capas/branco.jpg);
+}
+
+.ul_1,
+.ul_2 {
+    color: lightgray;
+    font-size: 10pt;
+    font-weight: bold;
+    text-align: left;
+    list-style-type: none;
+    line-height: 3;
+}
+
+span {
+    text-decoration: underline;
+}
+
+table:hover {
+    transform: rotate(-5deg);
+    border: 5px double gold;
+}
+
+h1:hover, 
+span:hover {
+    background-color: crimson;
+    color: lightpink;
+    border-color: lightpink;
+}
